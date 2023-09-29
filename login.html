@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 3px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .input-group input:focus {
+            outline-color: #3498db;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            background-color: #cc0000; 
+        }
+        
+        .signup-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .login-link {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background-color: #A52A2A; 
+            color: #fff;
+            padding: 10px 0;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+
+        .login-link:hover {
+            background-color: #cc0000; 
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="your_server_endpoint.php" method="post">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <a href="form.html" class="login-link">Login</a>
+        </form>
+        
+        <div class="signup-link">
+            Make An Account: <a href="signup.html">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>
